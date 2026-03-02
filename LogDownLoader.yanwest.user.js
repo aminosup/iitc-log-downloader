@@ -1,15 +1,17 @@
 // ==UserScript==
-// @name            IITC plugin: Log Downloader for yanwest
-// @category        Info
-// @version         0.1.0
-// @description     Download Ingress logs (All/Faction) as JSON for analysis tools.
-// @id              iitc-plugin-log-downloader-yanwest
-// @namespace       https://github.com/h-nis/iitc-log-downloader
-// @updateURL       https://github.com/h-nis/iitc-log-downloader/raw/main/LogDownLoader.yanwest.user.js
-// @downloadURL     https://github.com/h-nis/iitc-log-downloader/raw/main/LogDownLoader.yanwest.user.js
-// @match           https://intel.ingress.com/*
-// @grant           none
-// ==UserScript==
+// @id             iitc-plugin-log-downloader-yanwest@aminosup
+// @name           IITC plugin: Log Downloader for yanwest
+// @category       Info
+// @version        0.1.1
+// @namespace      https://github.com/aminosup/iitc-log-downloader
+// @updateURL      https://github.com/aminosup/iitc-log-downloader/raw/main/LogDownLoader.yanwest.user.js
+// @downloadURL    https://github.com/aminosup/iitc-log-downloader/raw/main/LogDownLoader.yanwest.user.js
+// @description    Download Ingress logs as JSON
+// @author         aminosup
+// @match          https://intel.ingress.com/*
+// @include        https://intel.ingress.com/*
+// @grant          none
+// ==/UserScript==
 
 function wrapper(plugin_info) {
     if (typeof window.plugin !== 'function') window.plugin = function() {};
@@ -71,4 +73,5 @@ const script = document.createElement('script');
 const info = {};
 if (typeof GM_info !== 'undefined' && GM_info && GM_info.script) info.script = { version: GM_info.script.version, name: GM_info.script.name, description: GM_info.script.description };
 script.appendChild(document.createTextNode('(' + wrapper + ')(' + JSON.stringify(info) + ');'));
+
 (document.body || document.head || document.documentElement).appendChild(script);
