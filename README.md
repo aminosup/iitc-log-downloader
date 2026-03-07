@@ -32,8 +32,11 @@
 
 1. [Ingress Intel Map](https://intel.ingress.com/) を開きます。
 2. COMM（チャット）をスクロールして、解析したい期間のログを読み込ませます。
-3. 画面左下の **「📥 Log Download」** をクリックしてログを保存します。
-4. **[Ingress Log Web](https://ingress-log.pages.dev/)** にアクセスし、保存したファイルをアップロードしてください。
+   注意自動で取得するプラグインを作成しています。
+   ### 🔄 チャットバッファ拡張 & 自動取得ツール
+[IITC: Chat Buffer Expander をインストール](https://github.com/aminosup/iitc-log-downloader/raw/main/IITC_Chat_Buffer_Expander.user.js)
+4. 画面左下の **「📥 Log Download」** をクリックしてログを保存します。
+5. **[Ingress Log Web](https://ingress-log.pages.dev/)** にアクセスし、保存したファイルをアップロードしてください。
 
 ---
 
