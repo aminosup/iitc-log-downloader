@@ -1,4 +1,4 @@
-# 📥 IITC ログ保存プラグイン (Log Downloader) & 分析ツール利用ガイド
+# 📥 PC版Chrome用TampermonkeyのIITC ログ保存プラグイン (Log Downloader) & 分析ツール利用ガイド
 
 このリポジトリは、Ingress の「Intel Map」からログデータを保存し、専用ツールで詳細に分析するためのセットを提供します。
 
